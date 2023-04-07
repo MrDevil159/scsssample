@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s ease-out;
+}
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+body.dark-mode header {
+  background-color: #3e3e3e;
+  color: #fff;
+}
+body.dark-mode .box {
+  background-color: #3e3e3e;
+  color: white;
+}
+body.dark-mode footer {
+  background-color: #3e3e3e;
+  color: #fff;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+#dark-mode-toggle {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+#dark-mode-toggle:hover {
+  background-color: #333;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  #dark-mode-toggle {
+    margin-top: 20px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+  }
+}
+
+.box {
+  background-color: #ccc;
+  border: 1px solid #999;
+  padding: 20px;
+  flex-basis: calc(33.33% - 20px);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 47rem;
+}
+.box .boxdescription {
+  align-items: center;
+  display: inherit;
+}
+.box .boxdescription h1 {
+  text-decoration: underline;
+}
+.box .boximg {
+  height: auto;
+  max-width: 100%;
+}
+.box .boximg img {
+  height: 375px;
+  width: 375px;
+  border-radius: 50%;
+  border: 3px solid #999;
+}
+.box .boximg img:hover {
+  border: 3px solid #fff;
+  transition: 1s ease-in-out;
+}
+.box:hover {
+  background-color: #999;
+  transition: 1s ease-in-out;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    height: auto;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
